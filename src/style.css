@@ -1,0 +1,210 @@
+@font-face {
+  font-family: IranSans;
+  src: url("fonts/IranSans.ttf");
+}
+
+:root {
+  --yellow: rgb(255, 174, 0);
+  --blue: #18375f;
+  --darkblue: #0f223b;
+  --darkyellow: rgb(197, 135, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: IranSans, sans-serif;
+}
+
+body {
+  display: inline-flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+span {
+  color: var(--yellow);
+}
+
+.left_side {
+  background-image: url("img/closeup-business-woman-hand-typing-laptop-keyboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 50%;
+  width: 70%;
+  height: 100%;
+}
+
+.bg_color {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left_side__centred {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 3vh;
+  color: var(--blue);
+}
+
+.left_side__centred__logo__logo_img {
+  width: 30%;
+  filter: hue-rotate(60deg);
+}
+
+.seacrh {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 10vh;
+  border-radius: 20rem;
+  box-shadow: 5px 7px 1px var(--yellow);
+}
+
+.left_side__search__input_txt1 {
+  width: 80%;
+  height: 50%;
+  border: none;
+  outline: none;
+  margin-right: 0.5rem;
+}
+
+.left_side__end_btns {
+  margin-top: 2rem;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.left_side__end_btns__about_us__btn {
+  background-color: var(--blue);
+  border-radius: 2rem;
+  padding: 0.35rem;
+  border: none;
+  color: white;
+  width: 8rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.left_side__end_btns__download_btn {
+  background-color: var(--yellow);
+  border-radius: 2rem;
+  padding: 0.35rem;
+  border: none;
+  color: white;
+  width: 8rem;
+  cursor: pointer;
+}
+
+.left_side__end_btns__download_btn:hover {
+  background-color: var(--darkyellow);
+}
+
+.left_side__end_btns__about_us__btn:hover {
+  background-color: var(--darkblue);
+}
+
+.right_side {
+  background-color: var(--blue);
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 8rem;
+  color: white;
+}
+
+.right_side__download_txt {
+  font-size: 2rem;
+}
+
+.right_side__bazar_download {
+  display: inline-flex;
+  width: 70%;
+  margin-top: 1rem;
+}
+
+.right_side__bazar_download__img1,
+.right_side__bazar_download__img2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_side__bazar_download__img1_org,
+.right_side__bazar_download__img2_org {
+  width: 100%;
+}
+
+.right_side__bazar_download__img1_org {
+  margin-right: 2rem;
+}
+
+.right_side__tamin_omid_img {
+  width: 10rem;
+}
+
+.right_side__mobile_prev {
+  position: absolute;
+  width: 15%;
+  left: 56%;
+  top: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .right_side__mobile_prev {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .left_side {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg_color {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right_side {
+    padding: 3rem;
+    width: auto;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
